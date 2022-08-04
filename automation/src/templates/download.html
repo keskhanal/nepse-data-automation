@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 style="text-align: center;">Download Files</h1>
+    
+    <div style="text-align: center;">
+        {% for file in files %}
+        <li>
+            <a href="{{ url_for('download_file', filename = file )}}">{{ file }}</a>
+        </li>    
+        {% endfor %}
+    </div>
+    <br>
+    <div style="text-align: center;">
+        <h3>Wanna go back to <a href="{{ url_for('index') }}">Home Page</a></h3>
+    </div>
+        
+{% endblock %}

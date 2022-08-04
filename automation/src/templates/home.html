@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 style="text-align: center;">Nepse Data Automation</h1>
+        
+    <form name="form", method="POST", style="text-align: center;">
+        <br>
+        <p>
+            Enter the scripts of company you want to get the data:
+        </p>
+        <input type="text" name="scripts", size="25", style="text-align: center;", placeholder="Enter Scripts " required/>
+        <br><br>
+        <button value="Submit">submit</button>
+    </form>
+{% endblock %}
