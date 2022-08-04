@@ -8,13 +8,16 @@ from .automation import automate
 def index():
     if request.method == "POST":
         scripts = request.form.get("scripts")
+        try:
+            final_df = automate(scripts)
 
-        final_df = automate(scripts)
+            file_name = scripts +".csv"
+            final_df.to_csv("data/" + file_name, encoding='utf-8', index=False)
+            return redirect(url_for("download"))
+            
+        except:
+            return redirect(url_for("index"))
 
-        file_name = scripts +".csv"
-        final_df.to_csv("data/" + file_name, encoding='utf-8', index=False)    
-        
-        return redirect(url_for("download"))
     return render_template("home.html")
 
 
