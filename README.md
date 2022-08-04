@@ -18,18 +18,23 @@ docker-compose build
 
 docker-compose up -d
 ```
-Some of the snapshots 
+
+Hurray!!! Now you will be able to download the stock price data of any companies which are listed on NEPSE...
+
+
+
+## Some of the snapshots 
 This is the home page of the app
 ![home page](https://github.com/keskhanal/nepse-data-automation/blob/main/screenshots/Screenshot1.png?raw=true)
 
 ![home page](https://github.com/keskhanal/nepse-data-automation/blob/main/screenshots/Screenshot2.png?raw=true)
 
 
-Download Page
+### Download Page
+datasets can be downloaded from here
 ![download page](https://github.com/keskhanal/nepse-data-automation/blob/main/screenshots/Screenshot3.png?raw=true)
 
 
-Hurray!!! Now you will be able to download the stock price data of any companies which are listed on NEPSE...
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
